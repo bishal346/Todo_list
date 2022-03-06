@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {{>header}}
+    <form method = "POST" action = "/verify">
+        <h2>An otp has been sent to your phone number. please fillit below</h2>
+        <label>OTP : </label>
+        <br> 
+        <input type="number" name = "otp" /> 
+        <br>
+        <input type="submit" value="Submit"/>
+    </form>
+    {{message}}
+</body>
+</html>
